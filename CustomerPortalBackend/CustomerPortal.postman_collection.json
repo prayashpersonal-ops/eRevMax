@@ -1,0 +1,304 @@
+{
+  "info": {
+    "name": "CustomerPortal",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "94a9a1ad-9691-4532-91aa-b37746b3eef7",
+      "name": "Admin",
+      "item": [
+        {
+          "id": "eae97f7f-48c3-4dcf-8a20-45703b4b8e20",
+          "name": "See All Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/admin/see-all-users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "admin",
+                "see-all-users"
+              ],
+              "port": "8080"
+            }
+          }
+        },
+        {
+          "id": "a2b32589-482a-4b8c-bff3-2595d5b96f37",
+          "name": "User Access Denied By email",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/admin/user-access-denied-by-id/a1@gmail.com",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "admin",
+                "user-access-denied-by-id",
+                "a1@gmail.com"
+              ],
+              "port": "8080"
+            }
+          }
+        },
+        {
+          "id": "74e95ea8-091e-4f5e-9c4f-1370447f2986",
+          "name": "Login Admin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/admin/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "admin",
+                "login"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"ab1@gmail.com\",\"password\":\"a123\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "24883ed9-a882-483d-a4cc-35a4fce3900b",
+          "name": "User Access Granted By Email",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/admin/user-access-granted-by-id/a1@gmail.com",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "admin",
+                "user-access-granted-by-id",
+                "a1@gmail.com"
+              ],
+              "port": "8080"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "875122af-6489-4d7c-a8d2-3b80da56fdeb",
+      "name": "Hotels",
+      "item": [
+        {
+          "id": "f7ad63fc-339b-4159-af9c-bd98e7ee6626",
+          "name": "Hotels add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/hotels/add-hotel",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "hotels",
+                "add-hotel"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"name\":\"The Oberoi\"},{\"name\":\"Le Meridien\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "3b51570d-597c-43e3-93fb-9858e7ab5267",
+          "name": "find hotels by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/hotels/list-of-hotels-by-name/The",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "hotels",
+                "list-of-hotels-by-name",
+                "The"
+              ],
+              "port": "8080"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "3fa29843-12b4-4b2a-a6c3-273604f41118",
+      "name": "User",
+      "item": [
+        {
+          "id": "f7d16c62-0d7f-4517-822f-bb1632302e87",
+          "name": "Post Users",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/user/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "user",
+                "register"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"email\":\"d1@gmail.com\",\"name\":\"Test Case\",\"password\":\"t123\",\"companyName\":\"Radisson Blu\",\"address\":\"Kolkata, India\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "e7e37bb4-5b29-4239-a960-2e6316b9e038",
+          "name": "Login Users",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/user/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "user",
+                "login"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"a1@gmail.com\",\"password\":\"t123\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "2dd309b9-cd3e-4857-a996-2bdf5479adc6",
+          "name": "List Of Hotels",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/user/list-of-hotels-of-user/a1@gmail.com",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "user",
+                "list-of-hotels-of-user",
+                "a1@gmail.com"
+              ],
+              "port": "8080"
+            }
+          }
+        },
+        {
+          "id": "2618f15f-3563-4ad6-ac3b-147c50b79572",
+          "name": "Add HotelList By User",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/user/add-list-of-hotels-by-user",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "user",
+                "add-list-of-hotels-by-user"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"loginRequest\":{\"email\":\"a1@gmail.com\",\"password\":\"t123\"},\"name\":\"JW Marriott\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "0eb0ed40-1a0e-4a4a-a2e9-972b9bc1d200",
+          "name": "Search hotels By User",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/user/search-list-of-hotels-by-user",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "user",
+                "search-list-of-hotels-by-user"
+              ],
+              "port": "8080"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"loginRequest\":{\"email\":\"a1@gmail.com\",\"password\":\"t123\"},\"name\":\"O\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
